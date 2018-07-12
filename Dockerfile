@@ -19,7 +19,6 @@ RUN adduser --disabled-password \
 
 # Set up a working directory for IHaskell
 RUN mkdir ${HOME}/ihaskell
-RUN 
 WORKDIR ${HOME}/ihaskell
 
 USER root
