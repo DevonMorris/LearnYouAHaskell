@@ -49,6 +49,8 @@ COPY ihaskell/html ${HOME}/ihaskell/html
 COPY ihaskell/main ${HOME}/ihaskell/main
 COPY ihaskell/LICENSE ${HOME}/ihaskell/LICENSE
 
+COPY notebooks ${HOME}/notebooks
+
 USER root
 RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_UID}
