@@ -59,4 +59,4 @@ FROM vaibhavsagar/ihaskell-mybinder:latest
 #ENV PATH $(stack path --local-install-root)/bin:$(stack path --snapshot-install-root)/bin:$(stack path --compiler-bin):/home/${NB_USER}/.local/bin:${PATH}
 #RUN ihaskell install --stack
 #WORKDIR ${HOME}
-#CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
+CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
