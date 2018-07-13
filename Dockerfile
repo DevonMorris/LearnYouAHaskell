@@ -26,7 +26,7 @@ RUN chown -R ${NB_UID} ${HOME}
 USER ${NB_UID}
 
 # Set up stack
-COPY ihaskell/stack.yaml stack.yaml
+COPY stack.yaml stack.yaml
 RUN stack config set system-ghc --global true
 RUN stack setup
 
